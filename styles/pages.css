@@ -1,0 +1,45 @@
+div.pages {
+  padding: 20px 0;
+  height: 100px;
+  color: #6D7074;
+}
+
+div.pages .near {
+  margin: 0 auto;
+  height: 100%;
+  width: 140px;
+}
+
+div.pages .near .page {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #6D7074;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+div.pages .near .page:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+}
+
+div.pages .near .page.now {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 9px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--orange);
+}
+
+div.pages .near .next, div.pages .near .prev {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+div.pages .near .next:hover, div.pages .near .prev:hover {
+  color: var(--orange);
+}

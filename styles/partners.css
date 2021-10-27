@@ -1,0 +1,40 @@
+div.partner {
+  margin-top: 40px;
+}
+
+div.partner h4, div.partner div.tosite a {
+  font-weight: 600;
+}
+
+div.partner img {
+  float: right;
+  transition: 0.5s;
+}
+
+div.partner img:hover {
+  transform: scale(1.1);
+  /* filter: brightness(110%); */
+}
+
+div.fortext {
+    background: url(../images/decor/partners_tosite.svg), rgba(238,238,238,0.6);
+    background-blend-mode: color;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: 0.5s;
+}
+
+div.partner p {
+  margin-top: 15px;
+  margin-bottom: 0px !important;
+  min-height: 200px;
+
+}
+
+div.partner ul {
+  padding-left: 1rem !important;
+}
+
+div.partner .tosite {
+}

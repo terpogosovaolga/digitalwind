@@ -1,0 +1,29 @@
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
+footer div a {
+  padding: 10px 0;
+}
+
+footer div.info p {
+  margin-bottom: 5px;
+}
+
+footer div.info p span {
+  margin-left: 7px;
+}
+
+footer div.copyright, footer div.info {
+  margin-top: 20px;
+}
+
+footer div.copyright p {
+  text-align: center;
+}

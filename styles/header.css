@@ -1,0 +1,88 @@
+header .header {
+  padding: 40px 0;
+}
+
+.openmenu, .closemenu {
+  font-size: 30px !important;
+  padding: 8px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 52px; /* общая высота хэдера 150px/2 = 75px. Общая высота кнопки - 30px+16px = 46px/2 = 23px. 75-23=52px */
+
+}
+
+.openmenu {
+    right: 10px; /* относительно контейнера  0 + 10px паддинг правый */
+}
+
+.closemenu {
+    right: 40px; /* относительно контейнера  0 + 10px паддинг правый */
+}
+
+.openmenu:hover {
+  background-color: var(--darker-white);
+  color: black !important;
+}
+
+
+/* меню правое */
+nav.mainmenu {
+  background-color: var(--black);
+  height: 100vh;
+  width: 35%;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  /* right: 0; */
+  right: -700px;
+  box-shadow: -10px 0 30px rgb(0,0,0,0.5);
+  z-index: 20;
+  animation-name: slideInRight;
+  animation-play-state: paused;
+}
+
+nav.mainmenu .mainpart {
+  position: absolute;
+  top: 190px; /* 150px - высота логотипа + 80px на паддинги шапки */
+  height: 50vh;
+}
+
+nav.mainmenu .downpart {
+  height: 100px;
+  position: absolute;
+  bottom: 0; /* 150px - высота логотипа + 80px на паддинги шапки */
+}
+
+nav.mainmenu section a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+/* хедер, общий для всех страниц */
+header .header nav a {
+  margin-right: 30px;
+  font-size: 20px;
+
+}
+/* хедер, общий для всех страниц */
+header .header nav a:last-of-type {
+  margin-right: 0px;
+}
+
+header .header nav a.takepart {
+  /* color: var(--orange); */
+  font-weight: 600;
+}
+
+.openmenu1 {
+  font-size: 30px !important;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.openmenu1:hover {
+  background-color: var(--darker-white);
+  color: black !important;
+}

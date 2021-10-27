@@ -1,0 +1,172 @@
+@font-face {
+  src: url(../fonts/centurygothic.ttf);
+  font-family: Century;
+}
+@font-face {
+  src: url(../fonts/centurygothic_bold.ttf);
+  font-family: Century Bold;
+}
+
+
+
+body {
+  --black: #303841; /* rgb(48,56,65) */
+  --lighter-black: #383F47;
+  --white: #EEEEEE; /* в rgb() формате - rgb(238,238,238)*/
+  --darker-white: #DEDEDE;
+  --orange: #FF5722;
+  --bright-orange: #E84611; /*  #FB4309; */
+
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+  font-family: Century;
+  color: var(--black);
+  font-size: 16px;
+  overflow-x: hidden;
+
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+}
+
+a.text-orange:hover {
+  color: var(--bright-orange) !important;
+}
+
+.text-brightorange-hover:hover {
+  color: var(--bright-orange) !important;
+}
+
+.text-whiteW-hover:hover {
+  color: white !important;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-mywhite {
+  color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.cp {
+  cursor: pointer;
+}
+/*
+.hover-text-blackB:hover {
+  color: black !important;
+} */
+
+/* картинки с обтеканием текста */
+img.floating {
+  margin-bottom: 10px;
+}
+
+img.floating.float-left {
+  margin-right: 10px;
+}
+
+img.zoomed {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+div.forzoomed {
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  transition: .5s;
+  cursor: pointer;
+  height: 0;
+}
+
+div.forzoomed i {
+  font-size: 40px;
+  color: var(--white);
+}
+
+
+section {
+  margin-top: 40px;
+}
+
+.mainh2 {
+  color: var(--orange);
+  /* margin-top: 40px; */
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.mainh2 a, p.p a {
+  font-size: 16px;
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+  height: 30px;
+  width: 35px;
+  padding: 5px 5px 5px 7px;
+  overflow: hidden;
+  display: block;
+  transition: 0.5s;
+}
+
+.mainh2 a i, p.p a  i {
+  color: var(--orange);
+  transition: 0.5s;
+}
+
+.mainh2 a span, p.p a span {
+  transition: 0.5s;
+  color: var(--white);
+}
+
+.mainh2 a:hover, p.p a:hover {
+  width: 100px;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+
+.mainh2 a:hover span, p.p a:hover span {
+  color: var(--white);
+}
+
+.mainh2 a:hover i, p.p a:hover i {
+  color: var(--white);
+}
+
+.form-check label, .form-check input {
+  cursor: pointer;
+}
+
+.form-check {
+  padding-left: 0px !important;
+}

@@ -1,0 +1,322 @@
+div.begin, div.more {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+div.begin {
+  height: 100vh;
+}
+
+.dw {
+  width: 40%;
+  font-size: 60px;
+}
+
+.tire {
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  width: 80px;
+  height: 8px;
+}
+
+.about_dw {
+  margin-top: 50px;
+  width: 50%;
+  font-size: 25px;
+}
+
+@media query {
+
+}
+
+.downheader {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  /* padding: 40px 0; */
+  height: 100px;
+
+}
+
+.downheader .container {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.downheader a {
+  font-size: 20px;
+}
+
+.downheader .leftside, .downheader .rightside {
+  height: 100%;
+}
+
+
+.downheader .rightside {
+  width: 30%;
+  text-align: right;
+  background: url(../images/decor/takepart.svg), rgba(238,238,238,0.6);
+  background-blend-mode: color;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  transition: 0.5s;
+}
+
+.downheader .rightside:hover {
+  background: url(../images/decor/takepart.svg), rgba(238,238,238,0.1);
+  background-blend-mode: color;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.downheader .leftside a.results {
+  margin-left: 40px;
+}
+
+span.circle {
+  border-radius: 50%;
+  position: absolute;
+}
+
+a.takepart {
+  font-family: Century Bold;
+  margin-right: 10px;
+  /* font-size: 25px; */
+}
+
+.links {
+  margin-top: 30px;
+  padding: 10px 0;
+  background: url(../images/decor/freshresults.svg), rgba(238,238,238,0.6);
+  background-blend-mode: color;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.links h5 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.links div a {
+  padding: 3px 0;
+}
+
+.two_cols {
+  overflow-y: hidden;
+}
+.left-col, .right-col {
+  width: 50%;
+  height: 75vh;
+  padding: 0 10px;
+}
+
+.left-col {
+  overflow-y: scroll;
+  direction: rtl;
+  text-align: left;
+  position: relative;
+}
+
+.blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(238,238,238,0), rgba(238,238,238,1));
+}
+
+.right-col div.pic {
+  width: 100%;
+  height: 250px;
+  background-image: url(../images/photos/results2021_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.towinners {
+  height: 100px;
+  margin-top: 20px;
+}
+.togalleries {
+  /* height: 200px; */
+}
+.towinners div {
+  width: 60%;
+  margin-right: 0;
+  height: 100%;
+  background: url(../images/decor/towinners.svg), rgba(238,238,238,0.6);
+  background-blend-mode: color;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  text-align: right;
+
+}
+.togalleries div {
+  width: 60%;
+  margin-left: 0;
+  height: 100%;
+  background: url(../images/decor/togalleries.svg), rgba(238,238,238,0.6);
+  background-blend-mode: color;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+
+/* голосование */
+
+.voting div.work {
+    width: 95%;
+    margin: 10px auto;
+}
+.voting div.work .pic {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.voting div.work .text {
+  padding: 15px 0;
+}
+
+.voting div.work .text a {
+  background-color: var(--orange);
+  padding: 4px 10px;
+  color: var(--white);
+  border-radius: 2px;
+}
+
+.voting div.work .text a:hover {
+  background-color: var(--bright-orange);
+}
+
+.voting div.work .text > span {
+  font-weight: 600;
+}
+
+/* кнопка Мне нравится */
+.button {
+  background: var(--orange);
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--white);
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button p {
+  margin: 0;
+  position: relative;
+  transition: 0.5s;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 0;
+  background: var(--bright-orange);
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.shadow span {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.button:hover .shadow {
+  width: 100%;
+}
+
+.button:hover p {
+  opacity: 0;
+}
+
+.button:hover .shadow span {
+  opacity: 1;
+}
+
+div.tocatalog {
+  margin: 20px auto;
+  padding: 10px 25px;
+  border: 3px solid var(--orange);
+  border-radius: 5px;
+  font-size: 18px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+div.tocatalog i {
+  color: var(--white);
+  opacity: 0;
+  transition: 0.5s;
+  position: relative;
+}
+
+div.tocatalog span {
+  color: var(--orange);
+  transition: 0.5s;
+  font-weight: 600;
+  position: relative;
+}
+
+div.tocatalog:hover {
+  background-color: var(--orange);
+}
+
+div.tocatalog:hover span {
+  color: var(--white);
+  -webkit-animation: toright 0.6s ease;
+  animation: toright 0.6s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+div.tocatalog:hover i {
+  opacity: 1;
+  -webkit-animation: toleft 0.6s ease;
+  animation: toleft 0.6s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toleft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+
+@keyframes toright {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20px;
+  }
+}
