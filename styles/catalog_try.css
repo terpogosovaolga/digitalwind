@@ -1,0 +1,139 @@
+div.filter_open {
+  background-color: var(--darker-white);
+  text-align: center;
+  font-size: 18px;
+}
+
+div.filter_open, div.filters {
+  padding: 7px 25px;
+}
+
+div.filters .form-check {
+  margin-top: 7px;
+}
+
+div.filters .form-check input[type=radio] {
+	display: none;
+}
+
+.form-check label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form-check label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../images/forapp/radio-1.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form-check input[type=radio]:checked + label:before {
+	background: url(../images/forapp/radio-2.png) 0 0 no-repeat;
+}
+
+/* Hover */
+.form-check label:hover:before {
+	filter: brightness(120%);
+}
+
+/* Disabled */
+.form-check input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
+
+
+div.col.catalog {
+  padding: 0 0 0 20px;
+}
+
+div.col.catalog input {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--lighter-black);
+}
+
+div.ages {
+  padding: 20px 0;
+}
+
+
+div.age {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.age:not(.all) {
+  margin-right: 20px;
+}
+
+div.age.now {
+  background-color: var(--bright-orange);
+}
+
+div.age:not(.all):hover {
+  background-color: var(--bright-orange);
+}
+
+div.age.all {
+  background-color: var(--lighter-black);
+}
+
+div.age.all:hover {
+  background-color: var(--black)
+}
+
+.arrow.fas.fa-chevron-up {
+  transition: 0.5s;
+}
+
+.for_rotate {
+  transform: rotate(180deg);
+}
+
+
+/* работы */
+div.works .col-works {
+  max-height: 1300px;
+}
+
+div.work {
+  margin: 20px auto;
+  width: 200px;
+}
+
+div.work img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+div.work .text {
+  font-weight: 600;
+  padding: 10px 0;
+  transition: 0.5s;
+}
+
+
+
+div.work:hover .text {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 18px;
+}
+
+div.work:hover img {
+  transform: scale(0.9);
+}

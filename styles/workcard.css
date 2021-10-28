@@ -1,0 +1,109 @@
+div.photo {
+  background-image: url(../images/works/work_example.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+div.description {
+  padding-left: 20px;
+  position: relative;
+}
+
+div.description p {
+  padding: 7px;
+  margin-bottom: 0;
+}
+
+div.description p span.heading {
+  font-weight: 600;
+}
+
+div.description p span i, div.description p span a {
+  transition: 0.5s;
+}
+
+div.description p span i:hover, div.description p span a:hover {
+  color: var(--orange);
+}
+
+div.description .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+div.description .bottom a:hover {
+  color: var(--orange);
+}
+
+span.copied {
+  margin-left: 20px;
+  padding: 7px 10px;
+  font-size: 14px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+div.bottom a span {
+  font-size: 20px;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+div.bottom a i {
+  font-size: 40px;
+}
+
+div.bottom a:hover span {
+  color: var(--orange);
+  transform: translateX(-10px);
+}
+
+div.full_description, div.comments, div.add_comment, div.all_photos {
+  margin-top: 30px;
+}
+
+div.comment {
+  background-color: var(--darker-white);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+div.comment h5 span.text-orange {
+  font-size: 16px;
+}
+div.add_comment .small {
+  width: 500px;
+  text-align: center;
+}
+
+div.add_comment .small h3 {
+  text-align: center;
+}
+
+div.add_comment .small input, div.add_comment .small textarea {
+  margin-top: 15px;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--lighter-black);
+}
+
+div.add_comment .small button {
+  margin-top: 15px;
+  padding: 7px 40px;
+  border-radius: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+  font-size: 18px;
+  transition: 0.5s;
+}
+div.add_comment .small button:hover {
+  background-color: var(--bright-orange);
+}
