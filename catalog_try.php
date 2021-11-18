@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Каталог работ Цифрового Ветра</title>
+    <title>Новости Цифрового Ветра</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/dcc2a17f51.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="/styles/catalog.css">
+    <link rel="stylesheet" href="/styles/catalog_try.css">
     <link rel="stylesheet" href="/styles/pages.css">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/header.css">
@@ -18,6 +18,7 @@
     <script type="text/javascript" src="/scripts/main.js"></script>
     <script type="text/javascript" src="/scripts/pages.js"></script>
     <script type="text/javascript" src="/scripts/filters.js"></script>
+    <script type="text/javascript" src="/scripts/grid.js"></script>
   </head>
   <body>
     <?php include_once 'components/menu.php'; ?>
@@ -120,9 +121,7 @@
                 </div>
               </div>
             </div> <!-- div.ages.row -->
-            <div class="works"> <!-- сами работы -->
-              <div class="row">
-                <div class="col-works col-12 col-md-6 col-lg-4"> <!-- одна колонка -->
+            <div class="works grid"> <!-- сами работы -->
                   <div class="work"> <!-- одна работа -->
                     <img src="images/works/work_example.png" alt="">
                     <div class="text d-flex flex-column justify-content-between align-items-center">
@@ -144,8 +143,6 @@
                       <span>"The Ugly Guy"</span>
                     </div>
                   </div>
-                </div> <!-- колонка -->
-                <div class="col-works col-12 col-md-6 col-lg-4"> <!-- одна колонка -->
                   <div class="work"> <!-- одна работа -->
                     <img src="images/works/work.jpg" alt="">
                     <div class="text d-flex flex-column justify-content-between align-items-center">
@@ -174,8 +171,6 @@
                       <span>"О космосе"</span>
                     </div>
                   </div>
-                </div> <!-- колонка -->
-                <div class="col-works col-12 col-md-6 col-lg-4"> <!-- одна колонка -->
                   <div class="work"> <!-- одна работа -->
                     <img src="images/works/wk.png" alt="">
                     <div class="text d-flex flex-column justify-content-between align-items-center">
@@ -190,8 +185,6 @@
                       <span>"Природа"</span>
                     </div>
                   </div>
-                </div> <!-- колонка -->
-              </div>
             </div> <!-- div.works -->
             <?php include_once 'components/pages.php' ?>
 
